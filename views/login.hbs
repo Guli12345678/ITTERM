@@ -1,0 +1,35 @@
+<h3>Login</h3>
+
+<form id="loginForm">
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      {{! id=>ulash/korish =>labelni inputga
+      name=>yuborish => formdan serverga
+      }}
+      id="email"
+      name="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      value="alice@gmail.com"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      class="form-control"
+      value="hashed_password_123"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="./js/authorScript.js"></script>
+
+<script>
+  login()
+</script>

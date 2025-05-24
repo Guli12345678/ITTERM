@@ -1,0 +1,26 @@
+<h1 style="text-align: center;">{{title}}</h1>
+<div class="container" style="display:flex; gap:15px">
+  {{#each dictionary}}
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://c8.alamy.com/comp/KMT6MW/dictionary-key-showing-online-or-web-definition-reference-KMT6MW.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <p class="card-text">{{term}}<br />{{letter}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<div>
+  <ul id="list-dicts">
+  </ul>   
+</div>
+
+<script src="./js/dictScript.js"></script>
+<script>
+  getDicts()
+</script>

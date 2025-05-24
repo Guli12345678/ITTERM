@@ -1,0 +1,25 @@
+<h1 style="text-align: center;">{{title}}</h1>
+<div class="container" style="display:flex; gap:15px">
+  {{#each topics}}
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://cdn.textstudio.com/output/sample/normal/7/4/3/6/topic-logo-73-16347.png"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <p class="card-text">{{topic_text}}</p>
+      </div>
+    </div>
+
+  {{/each}}
+</div>
+
+<ul id="list-topics">
+</ul>
+
+<script src="./js/topicScript.js"></script>
+<script>
+  getTopics()
+</script>

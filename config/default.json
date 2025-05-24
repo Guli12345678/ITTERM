@@ -1,0 +1,20 @@
+{
+  "PORT": 3333,
+  "dbUri": "mongodb+srv://Gulsanam:admin1234@cluster0.saovnot.mongodb.net/itterm?retryWrites=true&w=majority&appName=Cluster0",
+  "authortokenKey": "MySecretTokenKey",
+  "adminTokenKey": "MySecretTokenKey1",
+  "userTokenKey": "MySecretTokenKey2",
+  "tokenExpTime": "24h",
+
+  "access_key": "AccessToKenSecretKeysdfsdfsdf",
+  "refresh_key": "RefreshToKenSecretKeysdfsdfsdf",
+  "access_time": "15h",
+  "refresh_time": "15d",
+  "cookie_refresh_time": 1296000000,
+
+  "smtp_password": "jpopsajcrycoexmu",
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": "587",
+  "smtp_user": "gulsanammamadieva083@gmail.com",
+  "api_url": "http://localhost:3333"
+}
