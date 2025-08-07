@@ -5,7 +5,7 @@ async function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     try {
-      await fetch("http://localhost:3333/api/author/login", {
+      await fetch("http://185.191.141.131:3333/api/author/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -47,7 +47,7 @@ async function getAuthors() {
   } else {
     console.log("AccessToken chiqish vaqti berilmagan!");
   }
-  await fetch("http://localhost:3333/api/author/all", {
+  await fetch("http://185.191.141.131/:3333/api/author/all", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -95,7 +95,7 @@ function getTokenExpTime(token) {
 async function refreshToken() {
   const loginUrl = "/login";
   try {
-    const response = await fetch("http://localhost:3333/api/author/refresh", {
+    const response = await fetch("http://185.191.141.131/:3333/api/author/refresh", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
